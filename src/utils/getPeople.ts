@@ -1,11 +1,6 @@
 import { ApolloError } from 'apollo-server-errors';
 import axios from 'axios';
-import {
-    GetPeopleProp,
-    GetPeopleResponse,
-    SwapiCallTypes,
-    SwapiResponseType,
-} from './type';
+import { GetPeopleProp, GetPeopleResponse, SwapiCallTypes, SwapiResponseType } from './type';
 
 /**
  * @param  {} {prop=1}
