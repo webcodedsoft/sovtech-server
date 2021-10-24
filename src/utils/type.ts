@@ -7,10 +7,11 @@ export type Results = {
 };
 
 type ResponseData = {
-  count: number;
-  next: string;
-  previous: string;
-  results: Results[];
+  count?: number;
+  name?: string;
+  next?: string;
+  previous?: string;
+  results?: Results[];
 };
 
 export type SwapiResponseType = {
@@ -25,4 +26,20 @@ export enum SwapiCallTypes {
 export type GetPeopleProp = {
   prop: string | number;
   type: SwapiCallTypes;
+};
+
+export type GetPeopleResponse = {
+  count: string | number;
+  results: Results[];
+};
+
+export type HomeWorld = {
+  name: string;
+  climate: string;
+  gravity: string;
+  terrain: string;
+  population: string;
+}
+export type GetPersonDetail = {
+  data: HomeWorld
 };
